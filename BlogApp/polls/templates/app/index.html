@@ -1,0 +1,358 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Foodieland Homepage</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+
+<body>
+    <h4 style="font-style: italic; display: inline-block;"><b>Foodieland.</b></h4>
+
+    <span style="display: inline-block; margin-left: 450px;">Home</span>
+
+    <span style="display: inline-block; margin-left: 50px;">Recipes</span>
+
+    <span style="display: inline-block; margin-left: 50px;">Blog</span>
+
+    <span style="display: inline-block; margin-left: 50px;">Contact</span>
+
+    <span style="display: inline-block; margin-left: 50px;">About us</span>
+
+    <i class="fa-brands fa-square-facebook" style="margin-left: 400px; font-size: 24px;"></i>
+
+    <i class="fa-brands fa-twitter" style="margin-left: 20px; font-size: 24px;"></i>
+
+    <i class="fa-brands fa-instagram" style="margin-left: 20px; font-size: 24px;"></i>
+
+    <hr>
+
+    <h1><b>Categories</b></h1>
+
+    <a href="" style="
+        float: right;             
+        text-decoration: none;      
+        color: black;                
+        padding: 10px 20px;        
+        background-color: lightcyan;  
+        border-radius: 8px;         
+        font-weight: bold;
+        margin-top: -55px;           
+    ">View All Categories</a>
+
+    <div style="clear: both;"></div>
+
+    <div style="text-align: center;">
+
+        <div style="
+            display: inline-block;          
+            width: 150px;                   
+            height: 150px;                  
+            margin: 10px;                   
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #f7f7f7;  /* hex gray rengidi vscodede tapammadim */
+            vertical-align: top;">
+
+            <span style="font-size: 50px;">🍙</span><br>
+            <p style="margin: 5px; font-weight: bold;">Breakfast</p>
+        </div>
+
+        <div style="
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #f0fff0;       /* color mania proqrami ile tapdim rengleri */
+            vertical-align: top;">
+            <span style="font-size: 50px;">🥬</span><br>
+            <p style="margin: 5px; font-weight: bold;">Vegan</p>
+        </div>
+
+        <div style="
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #fff0f5;       
+            vertical-align: top;">
+            <span style="font-size: 50px;">🥩</span><br>
+            <p style="margin: 5px; font-weight: bold;">Meat</p>
+        </div>
+
+        <div style="
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #fffaf0;       
+            vertical-align: top;">
+            <span style="font-size: 50px;">🍰</span><br>
+            <p style="margin: 5px; font-weight: bold;">Dessert</p>
+        </div>
+
+        <div style="
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #f7f7f7;       
+            vertical-align: top;">
+            <span style="font-size: 50px;">🥪</span><br>
+            <p style="margin: 5px; font-weight: bold;">Lunch</p>
+        </div>
+
+        <div style="
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding-top: 20px;
+            border-radius: 12px;
+            background-color: #f7f7f7;       
+            vertical-align: top;">
+            <span style="font-size: 50px;">🍫</span><br>
+            <p style="margin: 5px; font-weight: bold;">Chocolate</p>
+        </div>
+
+    </div>
+
+    <h1 style="text-align: center;font-size: 50px;font-style:inherit">Simple and tasty recipes</h1>
+    <p style="text-align: center;"><small>Simple and tasty recipes quickly transform fresh ingredients into effortlessly
+            delicious, satisfying dishes. <br>These curated guides make quality cooking accessible to everyone, regardless
+            of skill level, bringing daily joy.</small></p>
+
+<div class="recipe-grid">
+
+    <div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://www.greenqueen.com.hk/wp-content/uploads/2022/01/likemeat-3sgNkN4wRWI-unsplash.jpg" alt="Wagyu Cheeseburger" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon"></i> 
+        </div>
+
+        <h3 class="recipe-title">Big and Juicy Wagyu Beef Cheeseburger</h3>
+
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Snack</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://i.pinimg.com/1200x/ac/03/ef/ac03ef3f43e96c890e0903bdafe28cd9.jpg" alt="Roasted Salmon" class="recipe-img">
+            
+            <i class="fa-solid fa-heart heart-icon" style="color: red;"></i>
+        </div>
+
+        <h3 class="recipe-title">Fresh Lime Roasted Salmon with Ginger Sauce</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Fish</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://images.squarespace-cdn.com/content/v1/6352a78e5626a94602c08c5e/847804e5-3c96-4f66-9cf1-4f7a887e5ba9/unsplash-image-eeqbbemH9-c.jpg?format=2500w" alt="Pancake" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon" style="color: red;"></i>
+        </div>
+
+        <h3 class="recipe-title">Strawberry Oatmeal Pancake with Honey Syrup</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Breakfast</span>
+            </div>
+        </div>
+    </div>
+<div class="recipe-row">
+<div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=656&h=651" alt="Healthy Salad" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon"></i>
+        </div>
+
+        <h3 class="recipe-title">Fresh and Healthy Mixed Mayonnaise Salad</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Healthy</span>
+            </div>
+        </div>
+    </div>
+
+<div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://www.greenqueen.com.hk/wp-content/uploads/2022/07/meatballs-green-queen.jpg" alt="Meatballs" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon"></i>
+        </div>
+
+        <h3 class="recipe-title">Chicken Meatballs with Cream Cheese</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Meat</span>
+            </div>
+        </div>
+    </div>
+
+        <div class="ad-banner">
+        <img src="https://karimov-portfolio-web-3.netlify.app/assets/images/section%203/image%206.png" alt="Ad Banner">
+    </div>
+</div>
+
+<div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://www.maxi-eat.com/modules/smartblog/images/3-single-default.jpg" alt="Fruit Pancake" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon"></i>
+        </div>
+
+        <h3 class="recipe-title">Fruit Pancake with Orange & Blueberry</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Sweet</span>
+            </div>
+        </div>
+    </div>
+
+<div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://iamafoodblog.b-cdn.net/wp-content/uploads/2025/06/one-pot-hainanese-chicken-7105w-2048x1366.webp" alt="Chicken and Rice" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon" style="color: red;"></i>
+        </div>
+
+        <h3 class="recipe-title">The Best One Pot Chicken and Rice</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Snack</span>
+            </div>
+        </div>
+    </div>    
+
+<div class="recipe-card">
+        <div class="card-image-container">
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*aZkorGpX907Zio5hZwkqUw.jpeg" alt="Chicken and Bacon Pasta" class="recipe-img">
+            <i class="fa-solid fa-heart heart-icon"></i>
+        </div>
+
+        <h3 class="recipe-title">The Creamiest Creamy Chicken and Bacon Pasta</h3>
+        
+        <div class="recipe-details">
+            <div class="detail-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>30 Minutes</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Noodles</span>
+            </div>
+        </div>
+    </div>     
+</div>
+
+<section class="subscribe-section">
+  <div class="subscribe-container">
+    <h2>Deliciousness to your inbox</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <form class="subscribe-form">
+      <input
+        type="email"
+        placeholder="Your email address..."
+        required
+      />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <div class="subscribe-images">
+      <img src="https://foodieland-drab.vercel.app/images/veg1.svg" alt="" class="left-img" />
+      <img src="https://cdn.prod.website-files.com/61066aace2aaf25a5558530a/6111ee06b17f7074c5bb7d88_Food%20Right.png" alt="" class="right-img"/>
+    </div>
+  </div>
+
+
+</section>
+
+    <footer class="main-footer">
+        <div class="footer-top-row">
+        <div class="footer-section footer-info">
+            <h4 class="footer-logo"><b>Foodieland.</b></h4>
+            <p class="footer-description">Lorem ipsum dolor sit amet, consectetuipisicing elit</p>
+        </div>
+        
+        <div class="footer-section footer-links">
+            <a href="#">Recipes</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">About us</a>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright-text">© 2025 Flowbase. Powered by Shadman</p>
+            <div class="footer-social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
